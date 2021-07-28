@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.navbar {
+  background: $dark-grey;
+  color: $light-grey;
+  width: 100%;
+  max-height: 60px;
+  display: flex;
+  align-items: center;
+  &__logo {
+    font-weight: 600;
+    margin-left: 50px;
+  }
+  &__nav {
+    height: 100%;
+    cursor: pointer;
+    &:hover {
+      background: $light-grey;
+      color: $dark-grey;
+    }
+    &__item {
+      text-decoration: none;
+      list-style: none;
+    }
+  }
+}

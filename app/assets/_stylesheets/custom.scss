@@ -1,0 +1,10 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background: rgb(255, 173, 6);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 173, 6, 1) 8%,
+    rgba(29, 139, 231, 1) 100%
+  );
+}
