@@ -5,11 +5,30 @@
   &__contacts {
     height: 100vh;
     border-right: 1px solid rgb(192, 192, 192);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
   }
+
   &__messages {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
+
   &__contact {
     display: flex;
+    align-items: center;
+    background-color: $light-grey;
+    padding: 10px;
+    margin-bottom: 5px;
+    &__avatar {
+      img {
+        border-radius: 50%;
+      }
+    }
+    &__name {
+      padding: 0 20px;
+    }
   }
 }

@@ -1,10 +1,15 @@
-<div class="navbar">
-    <div class="navbar__logo">
-        ChatApp
+<div class="header">
+    <div class="navbar">
+        <div class="container navbar__container">
+            <div class="navbar__logo">
+                <%= image_tag("icon/icon.png", :alt => "logo") %>
+                ChatApp
+            </div>
+            <ul class="navbar__nav">
+                <li class="navbar__nav__item">
+                    Sign Up
+                </li>
+            </ul>
+        </div>
     </div>
-    <ul class="navbar__nav">
-        <li class="navbar__nav__item">
-            Messages
-        </li>
-    </ul>
 </div>
