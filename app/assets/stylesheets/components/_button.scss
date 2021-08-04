@@ -1,3 +1,30 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.btn-green {
+  @include button-color(#2ecc71, #fff, false);
+}
+
+.btn-blue {
+  @include button-color(#3498db, #fff, false);
+}
+
+.btn-yellow {
+  @include button-color(#f1c40f, #fff, false);
+}
+
+.btn-red {
+  @include button-color(#e74c3c, #fff, false);
+}
+
+.btn-transparent-white {
+  @include button-color(#ffffff00, #fff, true);
+}

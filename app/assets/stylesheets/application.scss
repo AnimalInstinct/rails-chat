@@ -13,10 +13,11 @@
 @import "layout/main", "layout/header", "layout/footer", "layout/grid";
 
 // 5. Components
-@import "components/button", "components/chat";
+@import "components/button", "components/chat", "components/card",
+  "components/form";
 
 // 6. Page-specific styles
-@import "pages/home";
+@import "pages/home", "pages/signup";
 
 // 7. Themes
 @import "themes/default";

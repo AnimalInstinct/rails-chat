@@ -56,6 +56,12 @@
       &:hover {
         text-shadow: 0px 0px 4px #ffffff69;
       }
+      a {
+        color: $light-grey;
+        &:hover {
+          color: $light-grey;
+        }
+      }
     }
   }
 }

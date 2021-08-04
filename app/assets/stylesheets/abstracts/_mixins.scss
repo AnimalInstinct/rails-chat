@@ -32,3 +32,23 @@
   }
 }
 
+@mixin button-color($bg, $color, $border) {
+  background: $bg;
+  color: $color;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+  a {
+    color: $color;
+    &:hover {
+      color: $color;
+    }
+  }
+  @if ($border) {
+    border: 2px solid $color;
+  }
+}
