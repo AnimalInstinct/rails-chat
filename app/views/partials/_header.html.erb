@@ -1,10 +1,12 @@
 <div class="header">
     <div class="navbar">
         <div class="container navbar__container">
+            <%= link_to root_path do %>
             <div class="navbar__logo">
-                <%= image_tag("icon/icon.png", :alt => "logo") %>
+                <%= image_tag("icon/icon.png", :alt => "logo")%>
                 ChatApp
             </div>
+            <% end %>
             <ul class="navbar__nav">
                 <li class="navbar__nav__item">
                     <%= link_to 'Sign Up', login_path, class: "nav-link" %>

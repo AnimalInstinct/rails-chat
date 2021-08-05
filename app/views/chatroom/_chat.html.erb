@@ -1,41 +1,19 @@
 <div class="chat">
     <div class="chat__contacts col-4">
+        <% @users.each do |user| %>
         <div class="chat__contact">
             <div class="chat__contact__avatar">
                 <%= image_tag("https://picsum.photos/50", :alt => "rss feed") %>
             </div>
             <div class="chat__contact__name">
-                <span>User Name</span>
+                <span><%= user.username %></span>
             </div>
         </div>
-        <div class="chat__contact">
-            <div class="chat__contact__avatar">
-                <%= image_tag("https://picsum.photos/50", :alt => "rss feed") %>
-            </div>
-            <div class="chat__contact__name">
-                <span>User Name</span>
-            </div>
-        </div>
-        <div class="chat__contact">
-            <div class="chat__contact__avatar">
-                <%= image_tag("https://picsum.photos/50", :alt => "rss feed") %>
-            </div>
-            <div class="chat__contact__name">
-                <span>User Name</span>
-            </div>
-        </div>
+        <% end %>
     </div>
     <div class="chat__column-right col-8">
         <div class="chat__messages">
-            <div class="chat__message">
-                <div class="chat__message__avatar">
-                    <%= image_tag("https://picsum.photos/50", :alt => "rss feed") %>
-                </div>
-                <div class="chat__message__body">
-                    <span class="chat__message__body__username"> User Name </span>
-                    <span class="chat__message__body__text"> Lorem ipsum dolor sit amet </span>
-                </div>
-            </div>
+            <%= render @messages %>
         </div>
         <div class="chat__action">
             <input class="chat__action__input" type="text">
