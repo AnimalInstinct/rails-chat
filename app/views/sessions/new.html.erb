@@ -7,19 +7,7 @@
                 <%= link_to "Sign Up", login_path, class: "btn btn-transparent-white login__signup__button" %>
             </div>
             <div class="login__form col-6 ">
-                <%= form_with(scope: :session, url: login_path) do |f| %>
-                <div class="form-group">
-                    <%= f.label :email, class: "form-label col-4" %>
-                    <%= f.email_field :email, class: "form-control col-8"%>
-                </div>
-                <div class="form-group">
-                    <%= f.label :password, class: "form-label col-4" %>
-                    <%= f.password_field :password, class: "form-control col-8" %>
-                </div>
-                <div class="form-group">
-                    <%= f.submit("Log in", class: "btn btn-blue btn-large") %>
-                </div>
-                <% end %>
+                <%= render 'form' %>
             </div>
         </div>
     </div>
