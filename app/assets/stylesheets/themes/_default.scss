@@ -3,4 +3,21 @@
 // default one.
 // -----------------------------------------------------------------------------
 
-$input-label-color: $mid-grey;
+$theme-input-label-color: $mid-grey;
+
+$theme-text-bold: 600;
+
+$theme-header-color: $dark-grey;
+$theme-text-color: $mid-grey;
+
+$theme-alert-success-background: $light-green;
+$theme-alert-success-header: $dark-green;
+$theme-alert-success-text: $mid-green;
+$theme-alert-success-close: $dark-green;
+
+$theme-alert-error-background: $light-red;
+$theme-alert-error-header: $dark-red;
+$theme-alert-error-text: $mid-red;
+$theme-alert-error-close: $dark-red;
+
+$theme-box-shadow: 0 4px 8px 0 #00000017;

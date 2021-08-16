@@ -1,0 +1,20 @@
+$z-layers: (
+  "hide": -1,
+  "zero": 0,
+  "default": 1,
+  "nav": 2,
+  "popup": 3,
+  "breadcrumbs": 5,
+  "topMenu": 5,
+  "preloader": 10,
+  "top": 999,
+);
+
+// management z-index
+@function z($layer) {
+  @if not map-has-key($z-layers, $layer) {
+    @warn "Такого слоя не существует";
+  } @else {
+    @return map-get($z-layers, $layer);
+  }
+}

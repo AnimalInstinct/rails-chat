@@ -12,6 +12,4 @@ Rails.start();
 Turbolinks.start();
 ActiveStorage.start();
 
-$(document).on("turbolinks:load", function () {
-  console.log("JS works!");
-});
+$(document).on("turbolinks:load", function () {});

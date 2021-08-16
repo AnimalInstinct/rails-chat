@@ -1,0 +1,44 @@
+.alert {
+  box-shadow: 0px;
+  box-shadow: $theme-box-shadow;
+  transition: 0.3s;
+  padding: 20px;
+  position: absolute;
+  max-width: 380px;
+  right: 0;
+
+  @mixin alert-header-defaults() {
+    font-size: 1.5em;
+    font-weight: $theme-text-bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+
+  &-success {
+    background-color: $theme-alert-success-background;
+    &__header {
+      color: $theme-alert-success-header;
+      @include alert-header-defaults();
+    }
+    &__text {
+      color: $theme-alert-success-text;
+    }
+  }
+
+  &-error {
+    background-color: $theme-alert-error-background;
+    &__header {
+      color: $theme-alert-error-header;
+      @include alert-header-defaults();
+    }
+    &__text {
+      color: $theme-alert-error-text;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
