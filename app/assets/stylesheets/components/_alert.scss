@@ -33,6 +33,17 @@
     }
   }
 
+  &-alert {
+    background-color: $theme-alert-error-background;
+    &__header {
+      color: $theme-alert-error-header;
+      @include alert-header-defaults();
+    }
+    &__text {
+      color: $theme-alert-error-text;
+    }
+  }
+
   &__close {
     position: absolute;
     top: 15px;
