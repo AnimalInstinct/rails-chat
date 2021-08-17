@@ -1,7 +1,8 @@
+<%= javascript_pack_tag 'toast', 'data-turbolinks-track': 'reload' %>
 <% flash.each do |message_type, message_content| %>
-  <div class="alert alert-<%= message_type %> fullwidth">
+  <div class="alert alert-<%= message_type %> fullwidth toast ">
     <div class="alert-<%= message_type %>__header"><%= message_type %></div>
     <div class="alert-<%= message_type %>__text"><%= message_content %></div>
-    <div class="alert__close i i-close"></div>
+    <div class="alert__close i i-close toast__close"></div>
   </div>
 <% end %>

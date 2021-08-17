@@ -3,9 +3,6 @@
   box-shadow: $theme-box-shadow;
   transition: 0.3s;
   padding: 20px;
-  position: absolute;
-  max-width: 380px;
-  right: 0;
 
   @mixin alert-header-defaults() {
     font-size: 1.5em;
@@ -40,5 +37,6 @@
     position: absolute;
     top: 15px;
     right: 15px;
+    cursor: pointer;
   }
 }
