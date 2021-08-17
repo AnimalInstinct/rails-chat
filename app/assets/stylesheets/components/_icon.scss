@@ -1,6 +1,7 @@
 
 
 .i {
+    display: block;
     width: 25px;
     height: 25px;
 }
@@ -9,4 +10,12 @@
     background: url('icons/close.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+}
+
+.i-send {
+    background: url('icons/send.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }

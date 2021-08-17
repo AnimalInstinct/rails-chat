@@ -1,25 +1,25 @@
 <div class="chat">
-    <div class="chat__contacts col-4">
-        <% @users.each do |user| %>
-        <div class="chat__contact">
-            <div class="chat__contact__avatar">
-                <%= image_tag("https://picsum.photos/50", :alt => "rss feed") %>
-            </div>
-            <div class="chat__contact__name">
-                <span><%= user.username %></span>
-            </div>
+  <div class="chat__contacts col-4">
+    <% @users.each do |user| %>
+      <div class="chat__contact">
+        <div class="chat__contact__avatar">
+          <%= image_tag("https://picsum.photos/50", :alt => "rss feed") %>
         </div>
-        <% end %>
+        <div class="chat__contact__name">
+          <span><%= user.username %></span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="chat__column-right col-8">
+    <div class="chat__messages">
+      <%= render @messages %>
     </div>
-    <div class="chat__column-right col-8">
-        <div class="chat__messages">
-            <%= render @messages %>
-        </div>
-        <div class="chat__action">
-            <input class="chat__action__input" type="text">
-            <div class="chat__action__button">
-                Send
-            </div>
-        </div>
+    <div class="chat__action">
+      <%= form_for(@message, html: {class: "chat__action__form", role: "form"}, url: message_path) do |f|%>
+        <%= f.text_field :body, class: "chat__action__form__input" %>
+        <%= f.button '<i class="i i-send"></i>'.html_safe, :class => 'chat__action__form__button' %>
+      <% end %>
     </div>
+  </div>
 </div>

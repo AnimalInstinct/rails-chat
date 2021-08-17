@@ -1,10 +1,10 @@
 .chat {
-  border: 1px solid rgb(192, 192, 192);
+  border: 1px solid $light-grey;
   height: 100%;
 
   &__contacts {
     height: 100%;
-    border-right: 1px solid rgb(192, 192, 192);
+    border-right: 1px solid $light-grey;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -13,7 +13,8 @@
   &__messages {
     height: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   &__column-right {
@@ -56,18 +57,47 @@
   }
 
   &__action {
-    display: flex;
-    align-items: center;
-    &__input {
+    min-height: 65px;
+    &__form {
+      height: 100%;
       width: 100%;
-      border: 0;
-      border-top: 1px solid #c2c2c2;
-      padding: 20px;
-    }
+      display: flex;
 
-    &__button {
-      padding: 20px;
-      background-color: sandybrown;
+
+      &__input {
+        width: 100%;
+        border: 0;
+        padding: 20px;
+        width: 100%;
+        border-top: 1px solid $light-grey;
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      &__button {
+        padding: 10px;
+        background: transparent;
+        border: none;
+        border-top: 1px solid $light-grey;
+        min-width: 85px;
+        cursor: pointer;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          height: 40px;
+          width: 1px;
+          background-color: $light-grey;
+          margin:auto 0;
+        }
+        & i {
+          height: 100%;
+          width: auto;
+          margin: auto;
+        }
+      }
     }
   }
 }
