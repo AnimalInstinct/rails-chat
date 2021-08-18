@@ -1,0 +1,14 @@
+<div class="login__wrapper">
+  <div class="login card">
+    <div class="row">
+      <div class="login__signup col-6">
+        <div class="login__signup__header">Sign Up</div>
+        <div class="login__signup__text">Or Log in if you already have an account</div>
+        <%= link_to "Login", login_path, class: "btn btn-transparent-white login__signup__button" %>
+      </div>
+      <div class="login__form col-6 ">
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,7 @@
     <% @users.each do |user| %>
       <div class="chat__contact">
         <div class="chat__contact__avatar">
-          <%= image_tag("https://picsum.photos/50", :alt => "rss feed") %>
+          <%= gravatar_for user, size: 50 %>
         </div>
         <div class="chat__contact__name">
           <span><%= user.username %></span>

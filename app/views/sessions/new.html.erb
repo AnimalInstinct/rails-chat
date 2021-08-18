@@ -1,14 +1,14 @@
 <div class="login__wrapper">
-    <div class="login card">
-        <div class="row">
-            <div class="login__signup col-6">
-                <div class="login__signup__header">Start Secure Chat</div>
-                <div class="login__signup__text">Sign Up and start your secure chat with your friends</div>
-                <%= link_to "Sign Up", login_path, class: "btn btn-transparent-white login__signup__button" %>
-            </div>
-            <div class="login__form col-6 ">
-                <%= render 'form' %>
-            </div>
-        </div>
+  <div class="login card">
+    <div class="row">
+      <div class="login__signup col-6">
+        <div class="login__signup__header">Start Secure Chat</div>
+        <div class="login__signup__text">Sign Up and start your secure chat with your friends</div>
+        <%= link_to "Sign Up", signup_path, class: "btn btn-transparent-white login__signup__button" %>
+      </div>
+      <div class="login__form col-6 ">
+        <%= render 'form' %>
+      </div>
     </div>
+  </div>
 </div>
