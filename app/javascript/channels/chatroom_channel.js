@@ -1,5 +1,5 @@
 import consumer from "./consumer"
-import { scroll_bottom } from "../packs/chat"
+import { scrollBottom } from "../lib/chat"
 
 consumer.subscriptions.create("ChatroomChannel", {
   connected() {
@@ -13,6 +13,6 @@ consumer.subscriptions.create("ChatroomChannel", {
   received(data) {
     // Called when there's incoming data on the websocket for this channel
     $('#chatMessages').append(data.message)
-    scroll_bottom()
+    scrollBottom()
   }
 })

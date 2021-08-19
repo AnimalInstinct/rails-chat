@@ -16,9 +16,9 @@
       <%= render @messages %>
     </div>
     <div class="chat__action">
-      <%= form_for(@message, html: {class: "chat__action__form", role: "form"}, url: message_path, remote: true) do |f|%>
-        <%= f.text_field :body, class: "chat__action__form__input" %>
-        <%= f.button '<i class="i i-send"></i>'.html_safe, :class => 'chat__action__form__button' %>
+      <%= form_for(@message, html: {id: "chatForm", class: "chat__action__form", role: "form"}, url: message_path, remote: true) do |f|%>
+        <%= f.text_field :body, class: "chat__action__form__input", id: "chatInput" %>
+        <%= f.button '<i class="i i-send"></i>'.html_safe, :class => 'chat__action__form__button', id: 'chatSendButton' %>
       <% end %>
     </div>
   </div>
